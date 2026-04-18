@@ -93,33 +93,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. Form Submission Simulation
-    const form = document.getElementById('consultationForm');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            
-            // Loading state
-            btn.innerHTML = '<i data-lucide="loader-2" class="spin"></i> Đang gửi...';
-            lucide.createIcons();
-            
-            // Simulate API call
-            setTimeout(() => {
-                btn.innerHTML = '<i data-lucide="check"></i> Gửi thành công';
-                btn.classList.remove('btn-primary');
-                btn.style.backgroundColor = 'var(--success)';
-                lucide.createIcons();
-                form.reset();
-                
-                // Revert after 3 seconds
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.classList.add('btn-primary');
-                    btn.style.backgroundColor = '';
-                }, 3000);
-            }, 1500);
-        });
+    // 6. Auto-scroll Mockup Body
+    const mockupBody = document.querySelector('.mockup-body');
+    if (mockupBody) {
+        const originalContent = mockupBody.innerHTML;
+        
+        // Wrap in a track and duplicate content for seamless looping
+        const track = document.createElement('div');
+        track.className = 'mockup-scroll-track';
+        track.innerHTML = originalContent + originalContent;
+        
+        mockupBody.innerHTML = '';
+        mockupBody.appendChild(track);
     }
 });
