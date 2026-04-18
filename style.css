@@ -906,7 +906,7 @@ footer {
 
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 1.8fr 2.5fr 1.2fr;
     gap: 40px;
     margin-bottom: 60px;
 }
@@ -955,9 +955,9 @@ footer {
 }
 
 .footer-col ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
 }
 
 .footer-col ul a:hover {
@@ -1061,5 +1061,9 @@ footer {
     .footer-container {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    
+    .footer-col ul {
+        grid-template-columns: 1fr;
     }
 }
