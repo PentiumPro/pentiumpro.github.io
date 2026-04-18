@@ -1,1090 +1,307 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>DSolutions - Giải pháp số cho doanh nghiệp Việt</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top"
-          ><img src="assets/img/navbar-logo.svg" alt="..."
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Dịch vụ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DSolutions - Đối tác cung cấp giải pháp IT, quản trị hệ thống mạng và lắp đặt camera an ninh chuyên nghiệp dành cho doanh nghiệp SME.">
+    <title>DSolutions | Giải Pháp IT & Camera Cho Doanh Nghiệp SME</title>
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-d">D</span>Solutions
+            </a>
+            <div class="nav-links">
+                <a href="#about">Về Chúng Tôi</a>
+                <a href="#services">Dịch Vụ</a>
+                <a href="#contact" class="btn btn-primary btn-sm">Liên Hệ Ngay</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </div>
         </div>
-      </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about">Về Chúng Tôi</a>
+            <a href="#services">Dịch Vụ</a>
+            <a href="#contact" class="btn btn-primary">Liên Hệ Ngay</a>
+        </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container">
-        <div class="masthead-subheading">Chào mừng đến với DSolutions</div>
-        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
-          >Tell Me More</a
-        >
-      </div>
-    </header>
-    <!-- Services-->
-    <section class="page-section" id="services">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading text-muted">
-            Các dịch vụ DSolutions đang cung cấp
-          </h3>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-elements">
+                <div class="glow-sphere sphere-1"></div>
+                <div class="glow-sphere sphere-2"></div>
+                <div class="grid-overlay"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge">Đồng Hành Cùng Doanh Nghiệp SME</div>
+                    <h1>Giải Pháp <span class="highlight">IT & Camera</span><br>Toàn Diện Cho Doanh Nghiệp</h1>
+                    <p>Tối ưu chi phí nhân sự, nâng cao hiệu suất vận hành với dịch vụ IT Outsource và hệ thống an ninh chuyên nghiệp từ DSolutions.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary btn-lg">Nhận Tư Vấn Miễn Phí <i data-lucide="arrow-right"></i></a>
+                        <a href="#services" class="btn btn-secondary btn-lg">Khám Phá Dịch Vụ</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal delay-1">
+                    <div class="glass-card mockup-card floating">
+                        <div class="mockup-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-row hover-lift">
+                                <div class="mockup-icon primary"><i data-lucide="server"></i></div>
+                                <div class="mockup-text">
+                                    <h4>Hệ Thống Mạng</h4>
+                                    <p>Hoạt động ổn định 99.9%</p>
+                                </div>
+                                <div class="mockup-status success">Online</div>
+                            </div>
+                            <div class="mockup-row hover-lift">
+                                <div class="mockup-icon secondary"><i data-lucide="camera"></i></div>
+                                <div class="mockup-text">
+                                    <h4>Camera An Ninh</h4>
+                                    <p>Giám sát 24/7</p>
+                                </div>
+                                <div class="mockup-status success">Active</div>
+                            </div>
+                            <div class="mockup-row hover-lift">
+                                <div class="mockup-icon accent"><i data-lucide="shield-check"></i></div>
+                                <div class="mockup-text">
+                                    <h4>Bảo Mật Dữ Liệu</h4>
+                                    <p>Hệ thống an toàn</p>
+                                </div>
+                                <div class="mockup-status success">Secure</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section-padding" id="services">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <div class="badge">Chuyên Môn Của Chúng Tôi</div>
+                    <h2>Dịch Vụ Nổi Bật Tại <span class="highlight">DSolutions</span></h2>
+                    <p>Cung cấp hệ sinh thái công nghệ toàn diện giúp doanh nghiệp của bạn vận hành trơn tru và an toàn tối đa.</p>
+                </div>
+                <div class="service-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card reveal">
+                        <div class="service-icon-wrap primary">
+                            <i data-lucide="monitor-smartphone"></i>
+                        </div>
+                        <h3>IT Helpdesk & Outsource</h3>
+                        <p>Xử lý sự cố máy tính, phần mềm, hỗ trợ người dùng tận nơi hoặc qua từ xa qua Ultraview/Teamviewer.</p>
+                        <ul class="service-list">
+                            <li><i data-lucide="check"></i> Khắc phục sự cố 24/7</li>
+                            <li><i data-lucide="check"></i> Bảo trì máy tính định kỳ</li>
+                            <li><i data-lucide="check"></i> Cài đặt phần mềm doanh nghiệp</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card reveal delay-1">
+                        <div class="service-icon-wrap secondary">
+                            <i data-lucide="network"></i>
+                        </div>
+                        <h3>Hạ Tầng Mạng & Server</h3>
+                        <p>Tư vấn, thiết kế và thi công hệ thống mạng LAN/WAN, cấu hình Server, đảm bảo kết nối tốc độ cao.</p>
+                        <ul class="service-list">
+                            <li><i data-lucide="check"></i> Thiết lập Server / NAS</li>
+                            <li><i data-lucide="check"></i> Tối ưu & quản trị hệ thống mạng</li>
+                            <li><i data-lucide="check"></i> Cấu hình VPN nội bộ an toàn</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card reveal delay-2">
+                        <div class="service-icon-wrap accent">
+                            <i data-lucide="cctv"></i>
+                        </div>
+                        <h3>Camera An Ninh (CCTV)</h3>
+                        <p>Giải pháp giám sát an ninh toàn diện với công nghệ camera sắc nét, theo dõi sát sao qua điện thoại.</p>
+                        <ul class="service-list">
+                            <li><i data-lucide="check"></i> Lắp đặt camera AI thông minh</li>
+                            <li><i data-lucide="check"></i> Cấu hình lưu trữ dữ liệu an toàn</li>
+                            <li><i data-lucide="check"></i> Nâng cấp hạ tầng camera cũ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container about-container">
+                <div class="about-image reveal">
+                    <div class="image-wrapper glass-card">
+                       <div class="stats-card glass-card floating" style="animation-delay: 1s;">
+                           <div class="stats-number">150+</div>
+                           <p>Doanh nghiệp tin dùng</p>
+                       </div>
+                       <!-- Aesthetic schematic graphic -->
+                       <div class="tech-schematic">
+                           <div class="center-node pulse">
+                               <i data-lucide="cpu"></i>
+                           </div>
+                           <div class="orbit">
+                               <div class="orbit-node n1"><i data-lucide="lock"></i></div>
+                               <div class="orbit-node n2"><i data-lucide="database"></i></div>
+                               <div class="orbit-node n3"><i data-lucide="wifi"></i></div>
+                               <div class="orbit-node n4"><i data-lucide="laptop"></i></div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="about-content reveal delay-1">
+                    <div class="badge">Về DSolutions</div>
+                    <h2>Trở Thành Phòng IT Thu Nhỏ Của Doanh Nghiệp Bạn</h2>
+                    <p class="lead">Hàng ngàn doanh nghiệp SME gặp khó khăn trong việc duy trì đội ngũ IT in-house do chi phí quá lớn. <strong>DSolutions</strong> ra đời để giải quyết triệt để bài toán này.</p>
+                    <p>Thay vì trả mức lương cao cho một nhân sự IT toàn thời gian, bạn có thể thuê trọn gói dịch vụ IT Outsourcing tại DSolutions. Chúng tôi cung cấp một đội ngũ chuyên gia giàu kinh nghiệm sẵn sàng giải quyết mọi sự cố với mức chi phí tối ưu nhất.</p>
+                    <div class="features-list">
+                        <div class="feature-item hover-lift">
+                            <div class="feature-icon secondary"><i data-lucide="zap"></i></div>
+                            <div>
+                                <h4>Phản hồi thần tốc</h4>
+                                <p>Có mặt xử lý sự cố trong vòng 2h tại nội thành</p>
+                            </div>
+                        </div>
+                        <div class="feature-item hover-lift">
+                            <div class="feature-icon accent"><i data-lucide="shield"></i></div>
+                            <div>
+                                <h4>Tuyệt đối bảo mật</h4>
+                                <p>Bảo mật thông tin và dữ liệu kinh doanh của khách hàng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA/Contact Section -->
+        <section class="cta section-padding" id="contact">
+            <div class="container">
+                <div class="cta-box glass-card reveal">
+                    <div class="cta-content">
+                        <h2>Sẵn sàng nâng cấp hạ tầng công nghệ cho doanh nghiệp?</h2>
+                        <p>Để lại thông tin, đội ngũ kỹ thuật của DSolutions sẽ liên hệ khảo sát và tư vấn giải pháp hoàn toàn miễn phí cho bạn.</p>
+                        
+                        <div class="contact-info-list mt-4">
+                            <div class="contact-item">
+                                <div class="c-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <h5>Hotline Hỗ Trợ</h5>
+                                    <p>0987 654 321</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="c-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <h5>Email Liên Hệ</h5>
+                                    <p>contact@dsolutions.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="consultationForm">
+                            <h3>Gửi Yêu Cầu Tư Vấn</h3>
+                            <div class="input-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" id="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" id="phone" placeholder="0123 456 789" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="service">Dịch vụ quan tâm</label>
+                                <select id="service">
+                                    <option value="IT">Dịch vụ IT Outsource</option>
+                                    <option value="Camera">Lắp đặt Camera An Ninh</option>
+                                    <option value="Network">Thiết lập Mạng & Server</option>
+                                    <option value="Other">Tư vấn tổng thể / Khác</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Nhận Báo Giá Ngay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <span class="logo-d">D</span>Solutions
+                </a>
+                <p class="footer-desc">Đối tác cung cấp dịch vụ IT Helpdesk, quản trị hệ thống và giải pháp Camera an ninh tin cậy cho doanh nghiệp SME.</p>
+                <div class="social-links">
+                    <a href="#" class="hover-lift"><i data-lucide="facebook"></i></a>
+                    <a href="#" class="hover-lift"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="hover-lift"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Dịch Vụ</h4>
+                <ul>
+                    <li><a href="#">IT Helpdesk Outsource</a></li>
+                    <li><a href="#">Quản trị Server/Network</a></li>
+                    <li><a href="#">Lắp đặt Camera AI</a></li>
+                    <li><a href="#">Bảo trì máy tính định kỳ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Chính Sách</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Văn Phòng</h4>
+                <div class="contact-info">
+                    <i data-lucide="map-pin"></i>
+                    <span>Tầng 3, Toà nhà ABC, Quận 1, TP. Hồ Chí Minh</span>
+                </div>
+                <div class="contact-info">
+                    <i data-lucide="clock"></i>
+                    <span>Thứ 2 - Thứ 6: 08:00 - 17:30</span>
+                </div>
+            </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">E-Commerce</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">Responsive Design</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">Web Security</h4>
-            <p class="text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-              maxime quam architecto quo inventore harum ex magni, dicta
-              impedit.
-            </p>
-          </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 DSolutions Vietnam. All rights reserved.</p>
+            </div>
         </div>
-      </div>
-    </section>
-    <!-- Portfolio Grid-->
-    <section class="page-section bg-light" id="portfolio">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <!-- Portfolio item 1-->
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal1"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/1.jpg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Threads</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Illustration
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <!-- Portfolio item 2-->
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal2"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/2.jpg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Explore</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Graphic Design
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4">
-            <!-- Portfolio item 3-->
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal3"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/3.jpg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Finish</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Identity
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-            <!-- Portfolio item 4-->
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal4"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/4.jpg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Lines</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Branding
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-            <!-- Portfolio item 5-->
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal5"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/5.jpg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Southwest</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Website Design
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <!-- Portfolio item 6-->
-            <div class="portfolio-item">
-              <a
-                class="portfolio-link"
-                data-bs-toggle="modal"
-                href="#portfolioModal6"
-              >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/6.jpg"
-                  alt="..."
-                />
-              </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Window</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Photography
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About-->
-    <section class="page-section" id="about">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
-        </div>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/1.jpg"
-                alt="..."
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>2009-2011</h4>
-                <h4 class="subheading">Our Humble Beginnings</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/2.jpg"
-                alt="..."
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>March 2011</h4>
-                <h4 class="subheading">An Agency is Born</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/3.jpg"
-                alt="..."
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>December 2015</h4>
-                <h4 class="subheading">Transition to Full Service</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img
-                class="rounded-circle img-fluid"
-                src="assets/img/about/4.jpg"
-                alt="..."
-              />
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>July 2020</h4>
-                <h4 class="subheading">Phase Two Expansion</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  ut voluptatum eius sapiente, totam reiciendis temporibus qui
-                  quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
-                  dolore laudantium consectetur!
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <h4>
-                Be Part
-                <br />
-                Of Our
-                <br />
-                Story!
-              </h4>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/1.jpg"
-                alt="..."
-              />
-              <h4>Parveen Anand</h4>
-              <p class="text-muted">Lead Designer</p>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Parveen Anand Twitter Profile"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Parveen Anand Facebook Profile"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Parveen Anand LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/2.jpg"
-                alt="..."
-              />
-              <h4>Diana Petersen</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Diana Petersen Twitter Profile"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Diana Petersen Facebook Profile"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Diana Petersen LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="team-member">
-              <img
-                class="mx-auto rounded-circle"
-                src="assets/img/team/3.jpg"
-                alt="..."
-              />
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Developer</p>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Larry Parker Twitter Profile"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Larry Parker Facebook Profile"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-dark btn-social mx-2"
-                href="#!"
-                aria-label="Larry Parker LinkedIn Profile"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-              eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam
-              corporis ea, alias ut unde.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Clients-->
-    <div class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="assets/img/logos/microsoft.svg"
-                alt="..."
-                aria-label="Microsoft Logo"
-            /></a>
-          </div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="assets/img/logos/google.svg"
-                alt="..."
-                aria-label="Google Logo"
-            /></a>
-          </div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="assets/img/logos/facebook.svg"
-                alt="..."
-                aria-label="Facebook Logo"
-            /></a>
-          </div>
-          <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
-              ><img
-                class="img-fluid img-brand d-block mx-auto"
-                src="assets/img/logos/ibm.svg"
-                alt="..."
-                aria-label="IBM Logo"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
-        </div>
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
-        <!-- to get an API token!-->
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-          <div class="row align-items-stretch mb-5">
-            <div class="col-md-6">
-              <div class="form-group">
-                <!-- Name input-->
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
-                />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- Email address input-->
-                <input
-                  class="form-control"
-                  id="email"
-                  type="email"
-                  placeholder="Your Email *"
-                  data-sb-validations="required,email"
-                />
-                <div class="invalid-feedback" data-sb-feedback="email:required">
-                  An email is required.
-                </div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">
-                  Email is not valid.
-                </div>
-              </div>
-              <div class="form-group mb-md-0">
-                <!-- Phone number input-->
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="Your Phone *"
-                  data-sb-validations="required"
-                />
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  A phone number is required.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group form-group-textarea mb-md-0">
-                <!-- Message input-->
-                <textarea
-                  class="form-control"
-                  id="message"
-                  placeholder="Your Message *"
-                  data-sb-validations="required"
-                ></textarea>
-                <div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  A message is required.
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Submit success message-->
-          <!---->
-          <!-- This is what your users will see when the form-->
-          <!-- has successfully submitted-->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center text-white mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              To activate this form, sign up at
-              <br />
-              <a href="https://startbootstrap.com/solution/contact-forms"
-                >https://startbootstrap.com/solution/contact-forms</a
-              >
-            </div>
-          </div>
-          <!-- Submit error message-->
-          <!---->
-          <!-- This is what your users will see when there is-->
-          <!-- an error submitting the form-->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">
-              Error sending message!
-            </div>
-          </div>
-          <!-- Submit Button-->
-          <div class="text-center">
-            <button
-              class="btn btn-primary btn-xl text-uppercase disabled"
-              id="submitButton"
-              type="submit"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer py-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4 text-lg-start">
-            Copyright &copy; Your Website 2023
-          </div>
-          <div class="col-lg-4 my-3 my-lg-0">
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="#!"
-              aria-label="Twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="#!"
-              aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-dark btn-social mx-2"
-              href="#!"
-              aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <a class="link-dark text-decoration-none me-3" href="#!"
-              >Privacy Policy</a
-            >
-            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-          </div>
-        </div>
-      </div>
     </footer>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio item 1 modal popup-->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal1"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/1.jpg"
-                    alt="..."
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Threads
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Illustration
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio item 2 modal popup-->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal2"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/2.jpg"
-                    alt="..."
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Explore
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Graphic Design
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio item 3 modal popup-->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal3"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/3.jpg"
-                    alt="..."
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Finish
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Identity
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio item 4 modal popup-->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal4"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/4.jpg"
-                    alt="..."
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Lines
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Branding
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio item 5 modal popup-->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal5"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/5.jpg"
-                    alt="..."
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Southwest
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Website Design
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio item 6 modal popup-->
-    <div
-      class="portfolio-modal modal fade"
-      id="portfolioModal6"
-      tabindex="-1"
-      role="dialog"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-bs-dismiss="modal">
-            <img src="assets/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="modal-body">
-                  <!-- Project details-->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <img
-                    class="img-fluid d-block mx-auto"
-                    src="assets/img/portfolio/6.jpg"
-                    alt="..."
-                  />
-                  <p>
-                    Use this area to describe your project. Lorem ipsum dolor
-                    sit amet, consectetur adipisicing elit. Est blanditiis
-                    dolorem culpa incidunt minus dignissimos deserunt repellat
-                    aperiam quasi sunt officia expedita beatae cupiditate,
-                    maiores repudiandae, nostrum, reiciendis facere nemo!
-                  </p>
-                  <ul class="list-inline">
-                    <li>
-                      <strong>Client:</strong>
-                      Window
-                    </li>
-                    <li>
-                      <strong>Category:</strong>
-                      Photography
-                    </li>
-                  </ul>
-                  <button
-                    class="btn btn-primary btn-xl text-uppercase"
-                    data-bs-dismiss="modal"
-                    type="button"
-                  >
-                    <i class="fas fa-xmark me-1"></i>
-                    Close Project
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  </body>
+
+    <!-- Initialize Script -->
+    <script src="script.js"></script>
+</body>
 </html>
